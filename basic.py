@@ -60,3 +60,13 @@ print(tuplea)
 #Adding a tuple to another tuple
 #SETS {}
 #A set is a collection which is unordered, unchangeable*, and unindexed.
+set1 = {"a","b","c","d","e"}
+print(set1)
+print(1,000,000)
+
+#Sorting words from longest to shortest
+text = ('I love food but I love solid food the most')
+words = text.split()
+
+
+
