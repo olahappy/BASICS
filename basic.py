@@ -56,8 +56,8 @@ listb = list(tuplea)
 listb[2] = "five"
 tuplea = tuple(listb)
 print(tuplea)
-
 #Adding a tuple to another tuple
+
 #SETS {}
 #A set is a collection which is unordered, unchangeable*, and unindexed.
 set1 = {"a","b","c","d","e"}
@@ -65,8 +65,28 @@ print(set1)
 print(1,000,000)
 
 #Sorting words from longest to shortest
-text = ('I love food but I love solid food the most')
+text = 'I love food but I love solid food the most'
 words = text.split()
+t = list()
+for word in words:
+    t.append((len(word), word))
+t.sort(reverse=True)
+res = list()
+for length, word in t:
+    res.append(word)
+print(res)
+
+
+
+#formatted strings
+name = "John"
+age = 20
+print("hi " + name + ", you are " + str(age) + " years old") #str is used to change to string, but this is cumbersome
+print(f"hi {name}, you are {age} years old")
+#Escape sequence and string indexes
+#use of backslashes... \t for space \n for a new line
+print("My Dad says \"welcome\" \nHe is greeting you")
+
 
 
 
